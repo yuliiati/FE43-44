@@ -1,0 +1,20 @@
+h1 {
+    color:blue; 
+    text-align: center;
+}
+p {
+    color:blueviolet; 
+    font-size: 23px;
+    text-align: center;
+}
+img {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+article {
+    background-color: rgb(160, 219, 11);
+    width: 85%;
+    margin: auto;
+    padding: 30px;
+}

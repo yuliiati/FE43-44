@@ -1,0 +1,84 @@
+.tb_1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    border-spacing: 5px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    border-radius: 20px;
+}
+
+.tb_1 th {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.tb_1 td {
+    padding: 10px;
+    background-color: rgb(89, 184, 11);
+}
+
+.tb_2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-spacing: 1px;
+    border-style: solid;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.tb_2 th,
+.tb_2 td:first-child {
+    background-color: firebrick;
+    border: 1px solid black;
+    text-align: right;
+    padding: 20px;
+}
+
+/* .tb_2 td:first-child {
+    background-color: firebrick;
+} */
+.tb_2 td {
+    background-color: rgb(214, 174, 174);
+    border: 1px solid black;
+    text-align: right;
+}
+
+/* Table 3 */
+
+.tb_3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+.tb_3 td:nth-child(even),
+.tb_3 th:nth-child(even) {
+    background-color: rgb(88, 88, 92);
+    padding: 15px;
+}
+
+.tb_3 td:nth-child(odd),
+.tb_3 th:nth-child(odd) {
+    background-color: rgb(132, 132, 171);
+    padding: 15px;
+}
+
+/* Table 4 */
+.tb_4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 400px;
+    margin-bottom: 100px;
+    border: 2px solid black;
+}
+.tb_4 tr:nth-child(even) {
+    background-color: rgb(88, 88, 92);
+}
+.tb_4 tr:nth-child(odd) {
+    background-color: rgb(132, 132, 171);
+}
+.tb_4 td, .tb_4 th {
+    padding: 10px;
+}
