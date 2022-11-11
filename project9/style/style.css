@@ -12,13 +12,9 @@
     justify-content: space-between;
     align-items: center;
 }
-/* 
-    сделать для каждой иконки, кроме последней отступ справа 55px
-*/
-.header-icon:not(:last-child) { /* выбор всех элементов, кроме последнего */ 
+.header-icon:not(:last-child) {
     margin-right: 55px;
 }
-/* intro */
 .intro {
     background-color: #4FBFA5;
     padding: 25px 0 60px;
@@ -31,13 +27,13 @@
 }
 .nav-link {
     text-decoration: none;
+    color: white;
     font-size: 18px;
     font-style: italic;
-    color: white;
 }
 .nav-link:last-child {
     background-color: white;
-    color: black; /* цвет текста внутри кнопки черный */
+    color: black;
     padding: 10px 50px;
 }
 .intro-info {
@@ -53,9 +49,9 @@
     width: 30%;
 }
 .intro-title {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 48px;
+font-style: italic;
+font-weight: 400;
+font-size: 48px;
 }
 .intro-descr {
     font-size: 14px;
@@ -64,10 +60,62 @@
 }
 .intro-btn {
     padding: 15px 25px;
-    background-color: #00868A;
-    text-transform: uppercase; /* заглавные */
+    background-color: #00868a;
+    text-transform: uppercase;
     border: none;
     outline: none;
     color: white;
     font-style: italic;
+}
+.offers-wrapper {
+    display: flex;
+    margin-bottom: 128px;
+    justify-content: center;
+    /* align-items: center; */ 
+}
+.offers {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offers-text {
+    margin: 146px 0 60px 0;
+    color: #00868A;
+    font-style: italic;
+    text-align: center;
+}
+.offer-img {
+    width: 25%;
+    justify-content: space-between;
+    margin-right: 24px;
+}
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footer-icon:not(:last-child) {
+    margin-right: 55px;
+}
+/* .footer-icons {
+    margin-left: 60%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 30px 0 30px 0;
+    margin-bottom: 30px;
+} */
+.tb_1 {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 1px solid rgb(167, 164, 164); */
+    margin-bottom: 30px;
+}
+.tb_1 th,
+.tb_1 td:first-child {
+    width: 70%;
+    border: 1px solid rgb(221, 221, 221);
+    border-bottom: none;
+    padding: 20px;
 }

@@ -6,4 +6,13 @@
     .header-icon:not(:last-child) { /* выбор всех элементов, кроме последнего */ 
         margin-right: 20px;
     }
+    .intro-img {
+        display: none;
+    }
+    .intro-info {
+        width: 100%;
+    }
+    .offers {
+        width: calc(100% - 20px);
+      }
 }
