@@ -109,9 +109,9 @@
 // posts - посты в инстаграме
 // post - объект {title : "My new image", src : "https://img.jpg"}, {title : "My new image 1", src : "https://img.jpg"}
 // [{title : "My new image", src : "https://img.jpg"} , {title : "My new image 1", src : "https://img.jpg"}]
-
-// Методы массива. Базовые
-
+// __________________________________________
+// _______Методы массива. Базовые____________
+// __________________________________________
 // let posts =  [{}, {}, {}, {}]
 // {newPost} posts.push(newPost)
 
@@ -239,6 +239,22 @@
 // 3. i = 5, 5 < 1000 - true
 // 200. i 1000 
 
+// let num1 = +prompt("введите 1-е число")
+// let num2 = +prompt("введите 2-e число")
+
+// console.log(num1 + num2)
+// console.log(num1 - num2)
+// console.log(num1 * num2)
+// console.log(num1 / num2)
+
+// if (num1 > num2) {
+//   console.log(num1);
+// } else if (num1 == num2) {
+//   console.log("равны");
+// } else {
+//   console.log(num2);
+// }
+
 /*
     for(начало, условие, шаг) {
         действие
@@ -248,6 +264,7 @@
     когда нужн
     шаг - обновление, увеличение. наше действие должно выполняться с определенным промежутком
 */
+// let laptop = {} - объект!
 
 // let laptop = {
 //     color : "black",
@@ -290,9 +307,10 @@
 //     price : 50000
 // }
 
-// let.laptops = []
+// let.laptops = [] - массив!
 
-// Задача 1. Вывести в консоли:
+//_____________________________Домашка ноуты_____________________________________________________________________________________
+// _______________________Задача 1. Вывести в консоли:_______________________
 // а) все ноутбуки
 // б) все ноутбуки, цена которых больше 40000
 // в) Посчитать сумму цен всех ноутбуков.//- 
@@ -320,6 +338,24 @@
 //     }
 // ]
 
+// a) все ноутбуки =>
+
+
+// б) все ноутбуки, цена которых больше 40000 =>
+
+// for(let i = 0; i < laptops.length; i++) {
+//     if(laptops[i].price > 40000) {
+//         console.log(`
+//         <div class="laptops">
+//         <h1>${laptops[i].mark}</h1>
+//         <p>${laptops[i].price}</p>
+//         </div>
+//         `)
+//     }
+// }
+
+// в) Посчитать сумму цен всех ноутбуков =>
+
 // let sum = 0
 // for(let i = 0; i < laptops.length; i++){
 //     sum = sum + laptops[i].price
@@ -328,8 +364,10 @@
 // console.log(sum)
 // console.log(laptops)
 
-// console.log(`<div><p>${(laptops)}</p></div>`)bad
 
+
+//__________________________________________________________
+// console.log(`<div><p>${(laptops)}</p></div>`) //bad..
 // for(let i = 0; i < laptops.length; i++) {
 //     if(laptops[i].price > 40000) {
 //         console.log(`
@@ -351,60 +389,109 @@
 //     }
 // }
 
-// let num1 = +prompt("введите 1-е число")
-// let num2 = +prompt("введите 2-e число")
 
-// console.log(num1 + num2)
-// console.log(num1 - num2)
-// console.log(num1 * num2)
-// console.log(num1 / num2)
-
-// if (num1 > num2) {
-//   console.log(num1);
-// } else if (num1 == num2) {
-//   console.log("равны");
-// } else {
-//   console.log(num2);
-// }
-//______________________________________
-//ДЗ2// Задача.2
+//__________________________________________________________________________________________________________________
+// ______________________________________ДЗ2// Задача.2_____________________________________________________________
 // а) Вывести все ноутбуки, у которых есть категория "laptop"
 // б) Вывести все ноутбуки, у которых категория "premium"
 // в) Вывести все ноутбуки, у которых категория "tech"
-let laptopsSecond = [
-    {
-        mark : "Acer",
-        category : ["laptop", "tech"],
-        price : 25000
-    },
-    {
-        mark : "Apple",
-        category : ["notebook", "tech"],
-        price : 37000
-    },
-    {
-        mark : "Asus",
-        category : ["computer", "premium"],
-        price : 125500,
-    },
-    {
-        mark : "HP",
-        category : ["computer", "tech"],
-        price : 42000
-    },
-    {
-        mark : "Samsung",
-        category : ["notebook", "premium"],
-        price : 52000
-    }
-]
-// Задача 3.
+
+// let laptopsSecond = [
+//     {
+//         mark : "Acer",
+//         category : ["laptop", "tech"],
+//         price : 25000
+//     },
+//     {
+//         mark : "Apple",
+//         category : ["notebook", "tech"],
+//         price : 37000
+//     },
+//     {
+//         mark : "Asus",
+//         category : ["computer", "premium"],
+//         price : 125500,
+//     },
+//     {
+//         mark : "HP",
+//         category : ["computer", "tech"],
+//         price : 42000
+//     },
+//     {
+//         mark : "Samsung",
+//         category : ["notebook", "premium"],
+//         price : 52000
+//     }
+// ]
+
+// а) Вывести все ноутбуки, у которых есть категория "laptop" =>
+
+// for (let i = 0; i < laptopsSecond.length; i++) {
+//     for (let x = 0; x < laptopsSecond[i].category.length; x++) {
+//         if (laptopsSecond[i].category[x] == "laptop") {
+//             console.log(`
+//                     <div class="laptops">
+//                         <h1> laptop </h1>
+//                         <p>Mark: ${laptopsSecond[i].mark}</p>
+//                         <p>category:  ${laptopsSecond[i].category}</p>
+//                         <p>price:  ${laptopsSecond[i].price}</p>
+//                     </div>
+//             `)
+//         }
+//     }
+// }
+
+// б) Вывести все ноутбуки, у которых категория "premium" =>
+
+// for (let i = 0; i < laptopsSecond.length; i++) {
+//     for (let x = 0; x < laptopsSecond[i].category.length; x++) {
+//         if (laptopsSecond[i].category[x] == "premium") {
+//             console.log(`
+//                     <div class="laptops">
+//                         <h1> premium </h1>
+//                         <p>Mark: ${laptopsSecond[i].mark}</p>
+//                         <p>category:  ${laptopsSecond[i].category}</p>
+//                         <p>price:  ${laptopsSecond[i].price}</p>
+//                     </div>
+//             `)
+//         }
+//     }
+// }
+
+// в) Вывести все ноутбуки, у которых категория "tech" =>
+
+// for (let i = 0; i < laptopsSecond.length; i++) {
+//     for (let x = 0; x < laptopsSecond[i].category.length; x++) {
+//         if (laptopsSecond[i].category[x] == "tech") {
+//             console.log(`
+//                     <div class="laptops">
+//                         <h1> tech </h1>
+//                         <p>Mark: ${laptopsSecond[i].mark}</p>
+//                         <p>category:  ${laptopsSecond[i].category}</p>
+//                         <p>price:  ${laptopsSecond[i].price}</p>
+//                     </div>
+//             `)
+//         }
+//     }
+// }
+//__________________________________________________________________________________________________________________
+// ______________________________________ДЗ3// Задача.3_______________________________
+
 // Запрашивать у пользователя Марку и Цену ноутбука три раза.
 // Марку и цену ноутбука объединять в объект и добавлять(push) в массив laptops=[]-пустой
 // Итого будет массив из трех объектов.
 
+// let laptops3 = []
+// for (let i = 0; i < 3; i++) {
+//     let mark = prompt("Введите Марку")
+//     let price = +prompt("Введите Цену")
+//     laptops3.push({mark, price})
+// }
+// console.log(laptops3)
 
-// Задача 4. 
+//__________________________________________________________________________________________________________________
+// ______________________________________ДЗ4// Задача.4_______________________________
+
 // У пользователя с prompta запрашивать марку/цену. // По его ответу в консоли ввыводить ноутбуки с разметкой.
 // Какую марку вы бы хотели? -Acer. Выводим хар-ки Acer
 // На какую цену вы рассчитываете? -50000. Выводить все ноутбуки, которые удовл-т(меньше) этой цене
@@ -437,15 +524,20 @@ let laptopsSecond = [
 //         price : 52000
 //     }
 // ]
-// let mark = +prompt("Какую марку вы бы хотели?")
-// let price = +prompt("На какую цену вы рассчитываете?")
 
-// for(let i = 0; i < laptopsSecond.length; i++) {
+// let mark1 = +prompt("Какую марку вы бы хотели?")
+// let price1 = +prompt("На какую цену вы рассчитываете?")
+
+// for(let i = 0; i < laptopsSecond1.length; i++) {
 //         console.log(`
 //         <div class="laptops">
-//         <h1>${laptopsSecond[i].category}</h1>
+//         <h1>${laptopsSecond1[i].mark}</h1>
 //         </div>`)
 //     }
+    //я не знаю..выводит все**
+
+//_____________________ДЗ end______________________
+
 // let num1 = +prompt("enter num 1")
 // let num2 = +prompt("enter num 2")
 // let num3 = +prompt("enter num 3")

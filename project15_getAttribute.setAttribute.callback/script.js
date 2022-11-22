@@ -1,6 +1,6 @@
 /*
 setAttribute('attrName', 'attrValue') - добавляет атрибут тегу
-setAttribute('attrName') - получает значение атрибута у тега
+getAttribute('attrName') - получает значение атрибута у тега
 
 <img src="" alt="">, img- тег, src-атрибут, "" - значение атрибута
 <div class="item" id="hello"></div>  class-это атрибут, id - атрибут
