@@ -147,14 +147,14 @@
 
 // Задача. Есть массив arr. В консоль вывести числа из массива, которые больше 50
 // 1. сравнивать в условии нужно arr[i] > 50
-let arr = [32, 51, 60, 78, 105, 14, 10]  
 // let arr = [32, 51, 60, 78, 105, 14, 10]  
+// // let arr = [32, 51, 60, 78, 105, 14, 10]  
 
-for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
-        console.log(arr[i]);
-    }
-}
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//         console.log(arr[i]);
+//     }
+// }
 // for (let i = 0; i < arr.length; i++) {
 //     if (arr[i] >= 50) {
 //         console.log(arr[i]);
@@ -165,9 +165,54 @@ for (let i = 0; i < arr.length; i++) {
 //     for (let i = 0; i <= 100; i++) {
 //         console.log(i);
 //     }  
-   
-    
 //   }
+/*
+    Функции
+
+1. function declaration
+2. function expression
+3. arrow function
+*/
+
+// function sum(a, b) {
+//     return a + b
+// }
+// function mult(a, b) {
+//     return a * b
+// }
+
+//_______________________________
+//________________ДЗ Функции_____
+//_______________________________
+// Задача1. Написать функцию, которая аргументами получается два числа и возвращает большее из них.
+
+
+function biggest(a, b) {
+  if (a > b) {
+      return console.log(`a - ${a}`);
+  }
+  console.log(`b - ${b}`)
+}
+biggest(99, 100)
+
+// Задача2. Написать функцию, которая принимает аргументом число(больше 0)
+// и возвращает массив чисел от 0 до этого числа
+
+let prompted = +prompt("Enter Num")
+function myArray(x) {
+  if (x <= 0) { return "Введите число больше чем 0" }
+
+  let arr = [];
+
+  for (let i = 0; i <= x; i++) {
+      arr.push(i);
+  }
+  return arr
+}
+console.log(myArray(prompted))
+
+
+
   //_______________________________
 //Обьекты и массивы
 
