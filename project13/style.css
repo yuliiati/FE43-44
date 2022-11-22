@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*padding - внутри квадрата. размер не увеличивается*/
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 30%;
+    background-color: rgba(244, 232, 12, 0.918);
+    padding: 40px;
+    border-radius: 8px;
+    /* background-image: url(./image.jpg); */
+}
+button {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 50px;
+    border-radius: 5px;
+    background-color: chartreuse;
+}
+button:not(:last-child) {
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
