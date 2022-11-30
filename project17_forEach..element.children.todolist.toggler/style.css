@@ -7,7 +7,7 @@ p {
     text-align: center;
 }
 .red {
-    color: red;
+    background: red;
 }
 .main {
     display: flex;
