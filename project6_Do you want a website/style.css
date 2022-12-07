@@ -3,11 +3,100 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* 40 proj */
-.project40 {
 
+/* Дезигн и верстка */
+.design{
+    width: 100%;
+    padding: 57px 0 146px;
+    background: #EEEFF1;
 }
-
+.design-header{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;   
+}
+.link-header{
+    padding-top: 5px;  
+}
+ .link-header a{
+    text-decoration: none;
+    margin-right: 42px;
+    font-size: 16px;
+    transition: .5s;
+} 
+ .link-header a:hover{
+    color: rgb(69, 69, 73);
+} 
+.design-internal{
+    width: 54%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+.design-internal-left{
+    width: 35%;
+    margin: 30px 0;
+}
+.design-internal img{
+    width: 100%;
+}
+.design-internal-right{
+    width: 53%;
+    text-align: left;
+    align-items: left;
+}
+.design-title{
+    font-size:48px ;
+    margin: 30px 0 30px;
+}
+.design-descr{
+    font-size: 16px;
+    color: #727272;
+}
+.design-btn{
+    font-size: 16px;
+    padding: 25px 41px;
+    color: #EEEFF1;
+    background: #34547A;
+    margin: 60px 0;
+    margin-bottom: 63%;
+    border: none;
+}
+/* Обо мне */
+.process{
+    background: #F9F9F9;
+    padding: 100px 0;
+}
+.process-title{
+    font-size: 32px;
+    text-align: center;
+}
+.process-descr{
+    width: 30%;
+    color: #727272;
+    text-align: center;
+    margin: 50px auto 60px;
+}
+/* 40 proj */
+.project40{
+    width: 100%;
+    padding: 100px 0;
+    background: #34547A;
+}
+.project40-wrapper{
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.project40-wrapper img{
+    width: calc(20% - 50px);
+    margin-right: 50px;
+}
+.project40-wrapper img:last-child{
+    margin-right: 0;
+}
 /*Мои навыки*/
 .skills {
     padding: 100px 0;
